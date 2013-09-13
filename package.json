@@ -20,5 +20,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/swissmanu/harmonyjs/issues"
+  },
+  "dependencies": {
+    "request": "~2.27.0",
+    "node-xmpp": "~0.6.1"
   }
 }
