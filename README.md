@@ -1,10 +1,13 @@
 # harmonyjs
 
-`harmonyjs` is a simple Node.JS library which lets you talk to your Logitech
+`harmonyjs` is a Node.JS library which allows you to interact with your Logitech
 Harmony Hub.
 
 It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
 [protocol guide](https://github.com/jterrace/pyharmony/blob/master/PROTOCOL.md).
+
+
+## Usage
 
 
 ## License
