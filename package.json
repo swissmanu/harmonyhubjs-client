@@ -1,19 +1,17 @@
 {
   "name": "harmonyjs",
   "version": "1.0.0",
-  "description": "Control your Harmony Ultimate Hub with harmonyjs.",
+  "description": "harmonyjs is a Node.JS library which allows you to interact with your Logitech Harmony Hub.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/swissmanu/harmonyjs"
   },
   "keywords": [
-    "logitec",
+    "logitech",
     "harmony",
     "hub",
+    "remote",
     "api"
   ],
   "author": "Manuel Alabor <msites@msites.net>",
@@ -23,6 +21,8 @@
   },
   "dependencies": {
     "request": "~2.27.0",
-    "node-xmpp": "~0.6.1"
+    "node-xmpp": "~0.6.1",
+    "q": "~0.9.7",
+    "debug": "~0.7.2"
   }
 }
