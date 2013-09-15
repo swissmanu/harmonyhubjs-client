@@ -1,0 +1,21 @@
+/** File: .jshintrc
+ * Configuration for JSHint, the easier JSLint alternative.
+ *
+ * See also:
+ * - http://www.jshint.com/docs/#config
+ */
+{
+	"node": true
+	, "camelcase": true
+	, "curly": true
+	, "eqeqeq": true
+	, "latedef": true
+	, "newcap": true
+	, "noarg": true
+	, "undef": true
+	, "unused": true
+	, "trailing": true
+	, "maxdepth": 3
+	, "maxlen": 80
+	, "laxcomma": true
+}

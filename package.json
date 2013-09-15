@@ -24,5 +24,10 @@
     "node-xmpp": "~0.6.1",
     "q": "~0.9.7",
     "debug": "~0.7.2"
+  },
+  "devDependencies": {
+    "jshint": "~2.1.10",
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.3.1"
   }
 }
