@@ -8,7 +8,18 @@ It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
 
 
 ## Usage
+```javascript
+var harmony = require('./index');
 
+harmony('myharmonyaccount@email.com', 'mypassword', '192.168.1.200')
+.then(function(harmonyClient) {
+	harmonyClient.getCurrentActivity()
+	.then(function(currentActivity) {
+		console.log('Current Activity: ', currentActivity);
+		harmonyClient.end();
+	});
+});
+```
 
 ## License
 
