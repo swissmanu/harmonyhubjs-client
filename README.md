@@ -9,7 +9,7 @@ It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
 
 ## Usage
 ```javascript
-var harmony = require('./index');
+var harmony = require('harmonyjs');
 
 harmony('myharmonyaccount@email.com', 'mypassword', '192.168.1.200')
 .then(function(harmonyClient) {
