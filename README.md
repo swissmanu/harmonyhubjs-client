@@ -13,13 +13,34 @@ var harmony = require('harmonyjs');
 
 harmony('myharmonyaccount@email.com', 'mypassword', '192.168.1.200')
 .then(function(harmonyClient) {
-	harmonyClient.getCurrentActivity()
-	.then(function(currentActivity) {
-		console.log('Current Activity: ', currentActivity);
-		harmonyClient.end();
+	harmonyClient.isOff()
+	.then(function(off) {
+		if(off) {
+			console.log('Currently off. Turning TV on.');
+
+			harmonyClient.getActivities()
+			.then(function(activities) {
+				activities.some(function(activity) {
+					if(activity.label === 'Watch TV') {
+						var id = activity.id;
+						harmonyClient.startActivity(id);
+						harmonyClient.end();
+						return true;
+					}
+					return false;
+				});
+			});
+		} else {
+			console.log('Currently on. Turning TV off');
+			harmonyClient.turnOff();
+			harmonyClient.end();
+		}
 	});
 });
 ```
+
+This exmple connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
+
 
 ## License
 
