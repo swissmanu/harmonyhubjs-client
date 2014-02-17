@@ -42,6 +42,12 @@ harmony('myharmonyaccount@email.com', 'mypassword', '192.168.1.200')
 This exmple connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
 
 
+## Debug Traces
+`harmonyjs` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
+
+	$ DEBUG=harmonyjs* node myharmonyjsapp.js
+
+
 ## License
 
 Copyright (c) 2013 Manuel Alabor
