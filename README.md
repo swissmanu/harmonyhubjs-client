@@ -11,7 +11,7 @@ It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
 ```javascript
 var harmony = require('harmonyjs');
 
-harmony('myharmonyaccount@email.com', 'mypassword', '192.168.1.200')
+harmony('192.168.1.200')
 .then(function(harmonyClient) {
 	harmonyClient.isOff()
 	.then(function(off) {
