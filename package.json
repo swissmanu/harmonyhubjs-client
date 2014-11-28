@@ -1,11 +1,11 @@
 {
-  "name": "harmonyjs",
+  "name": "harmonyhubjs",
   "version": "1.1.0",
   "description": "harmonyjs is a Node.JS library which allows you to interact with your Logitech Harmony Hub.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swissmanu/harmonyjs"
+    "url": "https://github.com/swissmanu/harmonyhubjs"
   },
   "keywords": [
     "logitech",
@@ -17,7 +17,7 @@
   "author": "Manuel Alabor <msites@msites.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/swissmanu/harmonyjs/issues"
+    "url": "https://github.com/swissmanu/harmonyhubjs/issues"
   },
   "dependencies": {
     "debug": "^2.1.0",
