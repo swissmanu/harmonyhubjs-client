@@ -1,15 +1,21 @@
-# harmonyjs
+# harmonyhubjs
 
-`harmonyjs` is a Node.JS library which allows you to interact with your Logitech
+[![npm version](https://badge.fury.io/js/harmonyhubjs.svg)](http://badge.fury.io/js/harmonyhubjs)
+
+`harmonyhubjs` is a Node.JS library which allows you to interact with your Logitech
 Harmony Hub.
 
 It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
 [protocol guide](https://github.com/jterrace/pyharmony/blob/master/PROTOCOL.md).
 
+## Installation
+```bash
+npm install harmonyhubjs --save
+```
 
 ## Usage
 ```javascript
-var harmony = require('harmonyjs');
+var harmony = require('harmonyhubjs');
 
 harmony('192.168.1.200')
 .then(function(harmonyClient) {
@@ -43,9 +49,9 @@ This exmple connects to a Harmony hub available on the IP `192.168.1.200`. As so
 
 
 ## Debug Traces
-`harmonyjs` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
+`harmonyhubjs` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
 
-	$ DEBUG=harmonyjs* node myharmonyjsapp.js
+	$ DEBUG=harmonyhubjs* node myharmonyjsapp.js
 
 
 ## License
