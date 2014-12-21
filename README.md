@@ -1,8 +1,8 @@
-# harmonyhubjs
+# harmonyhubjs-client
 
-[![npm version](https://badge.fury.io/js/harmonyhubjs.svg)](http://badge.fury.io/js/harmonyhubjs)
+[![npm version](https://badge.fury.io/js/harmonyhubjs.svg)](http://badge.fury.io/js/harmonyhubjs-client)
 
-`harmonyhubjs` is a Node.JS library which allows you to interact with your Logitech
+`harmonyhubjs-client` is a Node.JS library which allows you to interact with your Logitech
 Harmony Hub.
 
 It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
@@ -10,12 +10,12 @@ It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
 
 ## Installation
 ```bash
-npm install harmonyhubjs --save
+npm install harmonyhubjs-client --save
 ```
 
 ## Usage
 ```javascript
-var harmony = require('harmonyhubjs');
+var harmony = require('harmonyhubjs-client');
 
 harmony('192.168.1.200')
 .then(function(harmonyClient) {
@@ -45,13 +45,16 @@ harmony('192.168.1.200')
 });
 ```
 
-This exmple connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
+This example connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
+
+## Lookup your hub
+If you have no idea which IP was assigned to your Harmony hub, have a look at [harmonyhubjs-discvoer](https://github.com/swissmanu/harmonyhubjs-client). It has an easy to use interface to find the hubs in your network.
 
 
 ## Debug Traces
-`harmonyhubjs` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
+`harmonyhubjs-client` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
 
-	$ DEBUG=harmonyhubjs* node myharmonyjsapp.js
+	$ DEBUG=harmonyhubjs:client* node myharmonyjsapp.js
 
 
 ## License
