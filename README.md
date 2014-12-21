@@ -48,7 +48,7 @@ harmony('192.168.1.200')
 This example connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
 
 ## Lookup your hub
-If you have no idea which IP was assigned to your Harmony hub, have a look at [harmonyhubjs-discvoer](https://github.com/swissmanu/harmonyhubjs-client). It has an easy to use interface to find the hubs in your network.
+If you have no idea which IP was assigned to your Harmony hub, have a look at [harmonyhubjs-discover](https://github.com/swissmanu/harmonyhubjs-discover). It has an easy to use interface to find the hubs in your network.
 
 
 ## Debug Traces
