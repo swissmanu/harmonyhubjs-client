@@ -1,8 +1,8 @@
 # State Digest
 
-| Content Root     | Type-Attribute               | Content Encoding |
-| :--------------- | :--------------------------- | :--------------- |
-| `<event>`        | `connect.stateDigest?notify` | JSON             |
+| Direction | Stanza Type             | Type-Attribute               | Content Encoding   |
+| :-------- | :---------------------- | :--------------------------- | :----------------- |
+| Incoming  | [Event](stanzaTypes.md) | `connect.stateDigest?notify` | [JSON](formats.md) |
 
 The state digest is emitted by a hub during starting and stopping activities. It allows to update its clients, even if
 they did not initiate the change of the activity.

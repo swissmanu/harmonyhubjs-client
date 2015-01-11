@@ -5,8 +5,9 @@
 `harmonyhubjs-client` is a Node.JS library which allows you to interact with your Logitech
 Harmony Hub.
 
-It is based on [@jterraces](https://github.com/jterrace) awesome Harmony
-[protocol guide](https://github.com/jterrace/pyharmony/blob/master/PROTOCOL.md).
+It was based upon [@jterraces](https://github.com/jterrace) awesome Harmony
+[protocol guide](https://github.com/jterrace/pyharmony/blob/master/PROTOCOL.md). `harmonyhubjs-client` provides an
+[extended protocol guide](https://github.com/swissmanu/harmonyhubjs-client/tree/master/docs/protocol) for the interested ones.
 
 ## Installation
 ```bash
