@@ -1,6 +1,6 @@
 # harmonyhubjs-client
 
-[![npm version](https://badge.fury.io/js/harmonyhubjs.svg)](http://badge.fury.io/js/harmonyhubjs-client)
+[![npm version](https://badge.fury.io/js/harmonyhubjs-client.svg)](http://badge.fury.io/js/harmonyhubjs-client)
 
 `harmonyhubjs-client` is a Node.JS library which allows you to interact with your Logitech
 Harmony Hub.
