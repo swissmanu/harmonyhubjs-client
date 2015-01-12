@@ -3,7 +3,7 @@ At the current state of reverse engineering, there are two different type of sta
 hubs:
 
 ## IQ
-This stanza follows the [XEP-0099](http://xmpp.org/extensions/xep-0099.html) RFC and enables a request/response based
+This stanza follows [XEP-0090](http://xmpp.org/extensions/xep-0090.html) and enables a request/response based
 communication between a client and the hub.
 
 The following snippet shows a "request" stanza, identified by a session unique `id`:
@@ -26,8 +26,8 @@ Notice that the response can be identified distinctly by the same `id` as the re
 ```
 
 
-## Event
-The event stanza is emitted by a hub discretely. It informs clients about changes on the hub. A good example is the
+## Message
+The `message` stanza is emitted by a hub discretely and contains always, as know of today, an `event` element. It informs clients about changes on the hub. A good example is the
 [Start Activity Finished](startActivityFinished.md) stanza which informs clients about a started activity:
 
 ```xml
@@ -38,5 +38,4 @@ The event stanza is emitted by a hub discretely. It informs clients about change
 </message>
 ```
 
-Event stanzas have no identifier than the `type` attribute.
-
+The `event` element uses the `type` attribute to distinguish between different event types.
