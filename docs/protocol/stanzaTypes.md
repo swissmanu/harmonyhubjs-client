@@ -1,5 +1,5 @@
 # Stanza Types
-At the current state of reverse engineering, there are two different type of stanzas Logitech is using for its Harmony
+At the current state of reverse engineering, there are two different types of stanzas Logitech is using for its Harmony
 hubs:
 
 ## IQ
