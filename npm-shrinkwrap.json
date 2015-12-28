@@ -1,0 +1,27 @@
+{
+  "name": "harmonyhubjs-client",
+  "dependencies": {
+    "node-xmpp-core": {
+      "version": "4.2.0",
+      "from": "node-xmpp-core@>=4.1.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/node-xmpp-core/-/node-xmpp-core-4.2.0.tgz",
+      "dependencies": {
+        "ltx": {
+          "version": "2.2.0",
+          "from": "git+https://github.com/swissmanu/ltx.git#cdata-for-ltx-parser"
+        }
+      }
+    },
+    "node-xmpp-stanza": {
+      "version": "1.1.0",
+      "from": "node-xmpp-stanza@>=1.1.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/node-xmpp-stanza/-/node-xmpp-stanza-1.1.0.tgz",
+      "dependencies": {
+        "ltx": {
+          "version": "2.2.0",
+          "from": "git+https://github.com/swissmanu/ltx.git#cdata-for-ltx-parser"
+        }
+      }
+    }
+  }
+}

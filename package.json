@@ -21,9 +21,8 @@
   },
   "dependencies": {
     "debug": "^2.1.0",
-    "node-stringprep": "^0.6.2",
-    "node-xmpp-client": "^1.0.0-alpha18",
-    "node-xmpp-core": "^1.0.0-alpha11",
+    "node-xmpp-client": "^3.0.0",
+    "node-xmpp-stanza": "^1.1.0",
     "q": "^1.1.2",
     "request": "^2.48.0"
   },
