@@ -1,6 +1,6 @@
 var HarmonyHubClient = require('../index')
 
-HarmonyHubClient('192.168.1.11')
+HarmonyHubClient('192.168.1.106')
   .then(function (harmonyClient) {
     return harmonyClient.isOff()
       .then(function (off) {
