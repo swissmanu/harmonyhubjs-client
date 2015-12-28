@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swissmanu/harmonyhubjs"
+    "url": "https://github.com/swissmanu/harmonyhubjs-client.git"
   },
   "keywords": [
     "logitech",
@@ -17,7 +17,7 @@
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/swissmanu/harmonyhubjs/issues"
+    "url": "https://github.com/swissmanu/harmonyhubjs-client/issues"
   },
   "dependencies": {
     "debug": "^2.1.0",
@@ -28,8 +28,15 @@
     "request": "^2.48.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-shell": "^1.1.1",
-    "jshint": "^2.5.10"
+    "cz-conventional-changelog": "^1.1.5",
+    "standard": "^5.4.1"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

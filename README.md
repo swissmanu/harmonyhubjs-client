@@ -1,6 +1,5 @@
 # harmonyhubjs-client
-
-[![npm version](https://badge.fury.io/js/harmonyhubjs-client.svg)](http://badge.fury.io/js/harmonyhubjs-client) 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![npm version](https://badge.fury.io/js/harmonyhubjs-client.svg)](http://badge.fury.io/js/harmonyhubjs-client)
 [![Analytics](https://ga-beacon.appspot.com/UA-3159494-8/harmonyhubjs-client)](https://github.com/swissmanu/harmonyhubjs-client)
 
 `harmonyhubjs-client` is a Node.JS library which allows you to interact with your Logitech
@@ -24,27 +23,27 @@ harmony('192.168.1.200')
 	harmonyClient.isOff()
 	.then(function(off) {
 		if(off) {
-			console.log('Currently off. Turning TV on.');
+			console.log('Currently off. Turning TV on.')
 
 			harmonyClient.getActivities()
 			.then(function(activities) {
 				activities.some(function(activity) {
 					if(activity.label === 'Watch TV') {
-						var id = activity.id;
-						harmonyClient.startActivity(id);
-						harmonyClient.end();
-						return true;
+						var id = activity.id
+						harmonyClient.startActivity(id)
+						harmonyClient.end()
+						return true
 					}
-					return false;
-				});
-			});
+					return false
+				})
+			})
 		} else {
-			console.log('Currently on. Turning TV off');
-			harmonyClient.turnOff();
-			harmonyClient.end();
+			console.log('Currently on. Turning TV off')
+			harmonyClient.turnOff()
+			harmonyClient.end()
 		}
-	});
-});
+	})
+})
 ```
 
 This example connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
