@@ -1,6 +1,5 @@
 # harmonyhubjs-client
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![npm version](https://badge.fury.io/js/harmonyhubjs-client.svg)](http://badge.fury.io/js/harmonyhubjs-client)
-[![Analytics](https://ga-beacon.appspot.com/UA-3159494-8/harmonyhubjs-client)](https://github.com/swissmanu/harmonyhubjs-client)
+[![Build Status](https://travis-ci.org/swissmanu/harmonyhubjs-client.svg)](https://travis-ci.org/swissmanu/harmonyhubjs-client) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![npm version](https://badge.fury.io/js/harmonyhubjs-client.svg)](http://badge.fury.io/js/harmonyhubjs-client) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Analytics](https://ga-beacon.appspot.com/UA-3159494-8/harmonyhubjs-client)](https://github.com/swissmanu/harmonyhubjs-client)
 
 `harmonyhubjs-client` is a Node.JS library which allows you to interact with your Logitech
 Harmony Hub.

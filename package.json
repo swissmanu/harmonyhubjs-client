@@ -1,6 +1,5 @@
 {
   "name": "harmonyhubjs-client",
-  "version": "1.1.6",
   "description": "harmonyhubjs-client is a Node.JS library which allows you to interact with your Logitech Harmony Hub.",
   "main": "index.js",
   "repository": {
@@ -28,10 +27,12 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.5",
-    "standard": "^5.4.1"
+    "standard": "^5.4.1",
+    "semantic-release": "^4.3.5"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
     "commitizen": {
