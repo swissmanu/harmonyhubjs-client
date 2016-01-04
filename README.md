@@ -8,53 +8,65 @@ It was based upon [@jterraces](https://github.com/jterrace) awesome Harmony
 [protocol guide](https://github.com/jterrace/pyharmony/blob/master/PROTOCOL.md). `harmonyhubjs-client` provides an
 [extended protocol guide](https://github.com/swissmanu/harmonyhubjs-client/tree/master/docs/protocol) for the interested ones.
 
+
 ## Installation
 ```bash
 npm install harmonyhubjs-client --save
 ```
+
 
 ## Usage
 ```javascript
 var harmony = require('harmonyhubjs-client');
 
 harmony('192.168.1.200')
-.then(function(harmonyClient) {
-	harmonyClient.isOff()
-	.then(function(off) {
-		if(off) {
-			console.log('Currently off. Turning TV on.')
+  .then(function(harmonyClient) {
+    harmonyClient.isOff()
+      .then(function(off) {
+        if(off) {
+          console.log('Currently off. Turning TV on.')
 
-			harmonyClient.getActivities()
-			.then(function(activities) {
-				activities.some(function(activity) {
-					if(activity.label === 'Watch TV') {
-						var id = activity.id
-						harmonyClient.startActivity(id)
-						harmonyClient.end()
-						return true
-					}
-					return false
-				})
-			})
-		} else {
-			console.log('Currently on. Turning TV off')
-			harmonyClient.turnOff()
-			harmonyClient.end()
-		}
-	})
-})
+          harmonyClient.getActivities()
+            .then(function(activities) {
+              activities.some(function(activity) {
+                if(activity.label === 'Watch TV') {
+                  var id = activity.id
+                  harmonyClient.startActivity(id)
+                  harmonyClient.end()
+                  return true
+                }
+                return false
+              })
+            })
+        } else {
+          console.log('Currently on. Turning TV off')
+          harmonyClient.turnOff()
+          harmonyClient.end()
+        }
+      })
+  })
 ```
 
 This example connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
-
-## Lookup your hub
-If you have no idea which IP was assigned to your Harmony hub, have a look at [harmonyhubjs-discover](https://github.com/swissmanu/harmonyhubjs-discover). It has an easy to use interface to find the hubs in your network.
 
 
 ## Debug Traces
 `harmonyhubjs-client` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
 
-	$ DEBUG=harmonyhubjs:client* node myharmonyjsapp.js
+```bash
+$ DEBUG=harmonyhubjs:client* node myharmonyjsapp.js
+```
+
+
+## Ecosystem Overview
+Various libraries, modules and applications grew around `harmonyhubjs-*`. Feel free to open a Pull Request if you want to list your addition to the ecosystem here.
+
+| Application / Module | Author | Description |
+| -------------------- | ------ | ----------- |
+| **[harmonyhubjs-client](https://github.com/swissmanu/harmonyhubjs-client)** | @swissmanu |  A Node.JS library which allows you to interact with your Logitech Harmony Hub. |
+| **[harmonyhubjs-discover](https://github.com/swissmanu/harmonyhubjs-discover)** | @swissmanu | A Node.JS library which lookups available Logitech Harmony hubs in the local network. |
+| **[orchestra-jsapi](https://github.com/swissmanu/orchestra-jsapi)** | @swissmanu | Vanilla JavaScript interface layer for `harmonyhubjs-*` libraries to make usage a breeze. |
+| **[orchestra](https://github.com/swissmanu/orchestra-client)** | @swissmanu | A desktop application to control your Logitech Harmony Hubs. |
 
 
 ## License
