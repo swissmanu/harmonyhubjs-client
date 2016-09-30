@@ -49,7 +49,6 @@ harmony('192.168.1.200')
 
 This example connects to a Harmony hub available on the IP `192.168.1.200`. As soon as the the connection is established, `isOff()` checks if the equipment is turned off. If off, the activity with the name `Watch TV` is started. If on, all devices are turned off.
 
-
 ## Debug Traces
 `harmonyhubjs-client` uses [debug](https://github.com/visionmedia/debug) for generating traces throughout its execution time. Activate them by setting the `DEBUG` environment variable:
 
@@ -57,6 +56,13 @@ This example connects to a Harmony hub available on the IP `192.168.1.200`. As s
 $ DEBUG=harmonyhubjs:client* node myharmonyjsapp.js
 ```
 
+## Contribution
+The `master` branch contains the latest stable release of the application.
+Development efforts are integrated with the `develop` branch first. Changes get then merged into `master` as soon as a new release should be published.
+
+When opening a new Pull Request make sure you point them to `develop`. Further ensure that your code follows [standard-js](http://standardjs.com/) style guidelines and you make use of proper commit messages. `harmonyhubjs-client` loves [Commitizen](http://commitizen.github.io/cz-cli/), so take a look there and use `git cz` for the most simple workflow :-)
+
+Thank you for your contribution!
 
 ## Ecosystem Overview
 Various libraries, modules and applications grew around `harmonyhubjs-*`. Feel free to open a Pull Request if you want to list your addition to the ecosystem here.
